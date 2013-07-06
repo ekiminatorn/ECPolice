@@ -1,0 +1,70 @@
+# ---------------------
+# GENERAL CONFIGURATION
+# ---------------------
+
+# Command for jailing. This is used for jailing cops AND caught people.
+# %username% and %duration% will be filled in automatically. You can customize %duration% below.
+# If you are using sdjail (the default built-in jail system), the variables are automatically filled in.
+jail-command: jail %username% 1 %duration%
+# Jail durations for players and cops, in minutes or other time format (for other jail plugins)
+jail-duration-for-player: 5
+jail-duration-for-cop: 30
+# Cop jail threshold. Set to 0 to disable.
+cop-threshold: 2
+# Ignore PvP restrictions from plugins like WorldGuard?
+ignore-pvp-restrictions: false
+# Should we run the jail command as the console or the cop?
+run-command-as-cop: false
+# Item stacks required to jail users.
+# DO NOT SET TO ANY VALUE LESS THAN 1.
+num-stacks-required-to-arrest: 1
+
+# ------------------
+# MODE CONFIGURATION
+# ------------------
+
+# Since 0.5 you can mix and match modes with /police mode.
+# Here you can disable a mode.
+
+# Enable beatdown mode *only*?
+beatdown-only: false
+# Enable drug seize mode *only*?
+seize-only: false
+
+# ----------------
+# SEIZING SETTINGS
+# ----------------
+
+# Should we remove the drugs permanently or add it to the policeman's inventory?
+destroy-items: false
+# If a policeman's inventory is full, destroy the items or drop them?
+destroy-items-if-inv-full: false
+# Item that a cop uses in order to jail players. Default is a stick
+police-item-id: 280
+# WorldGuard regions to disable arresting. Default is region1
+# NOTE: WorldGuard required to use this feature.
+ban-arrest-regions: ["region1"]
+
+# -------------
+# BEATDOWN MODE
+# -------------
+
+# What will be the maximum health of a player?
+beatdown-health: 20
+# How much health is taken from a player per beat?
+per-beat-health: 2
+# How many (x out of 100) times should the policeman miss? Set to 0 to disable.
+per-beat-miss: 1
+
+# --------
+# MESSAGES
+# --------
+caught-player: "Ahaha! %cop% has caught you with drugs, and you are now in jail with your drugs seized."
+cop-congratulation: "Congratulations! You caught %player% and have their drugs. Thanks for keeping us drug-free!"
+cop-warning: "Execuse me, but %player% didn't have drugs. You've done this %times% time(s) already. Don't do that again."
+cop-jailed: "You caught people without drugs %times% times, and have now been jailed. Your record will be cleared if you catch someone who does have drugs."
+beatdown-player: "Looks like you lost a beatdown with a officer!"
+beatdown-player-hit: "Someone's hitting you! Health: %health%/%max%"
+beatdown-hit: "You hit %player%! Health: %health%/%max%"
+beatdown-miss: "You miss your hit on %player%! Health: %health%/%max%"
+beatdown-beat: "You successfully beat %player%!"
