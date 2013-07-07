@@ -1,0 +1,14 @@
+name: ECPolice
+description: Adds more functionality to Drugsforme and Drugsseized plugin.
+author: Emil Ekstrom aka Uncle_Emil
+website: http://ekstemicraft.com
+softdepend: [TagAPI]
+loadbefore: [TagAPI]
+
+main: com.ekstemicraft.plugin.ecpolice.ECPolice
+version: 0.1
+commands:
+    policeman:
+        description: Policeman.
+        usage: /<command>
+  
