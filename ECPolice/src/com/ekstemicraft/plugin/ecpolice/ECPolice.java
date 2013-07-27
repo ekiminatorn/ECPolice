@@ -2,6 +2,7 @@ package com.ekstemicraft.plugin.ecpolice;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -111,6 +112,21 @@ public final class ECPolice extends JavaPlugin{
 			return true;
 			}
 		}
-return true;		
+
+     if(cmd.getName().equalsIgnoreCase("do")) {
+
+    	StringBuilder buffer = new StringBuilder();
+    	
+    	for(int i = 0; i < args.length; i++){
+    		buffer.append(" ").append(args[i]);
+    	}
+    	String message = buffer.toString();
+    	 String player = sender.getName();
+    	Bukkit.broadcastMessage(ChatColor.DARK_PURPLE + player + ": **" + message + " **");
+    	 
+     }
+ 	return true;
+     }
+
    }	
-}	
+	

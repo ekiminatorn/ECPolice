@@ -6,9 +6,12 @@ softdepend: [TagAPI]
 loadbefore: [TagAPI]
 
 main: com.ekstemicraft.plugin.ecpolice.ECPolice
-version: 1.0
+version: 1.1
 commands:
     policeman:
         description: Policeman.
+        usage: /<command>
+    do:
+        description: Roleplay command /do <message>
         usage: /<command>
   
