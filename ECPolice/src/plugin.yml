@@ -1,6 +1,6 @@
 name: ECPolice
-description: Adds more functionality to Drugsforme and Drugsseized plugin.
-author: Emil Ekstrom aka Uncle_Emil. On bukkit forums known as Ekstemi
+description: Adds more functionality to DrugMeUp and DrugsSeized plugin.
+author: Emil Ekstrom aka. Uncle_Emil. On bukkit forums known as Ekstemi
 website: http://ekstemicraft.com
 softdepend: [TagAPI]
 loadbefore: [TagAPI]

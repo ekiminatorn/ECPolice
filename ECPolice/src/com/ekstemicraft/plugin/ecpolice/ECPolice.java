@@ -2,7 +2,6 @@ package com.ekstemicraft.plugin.ecpolice;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
