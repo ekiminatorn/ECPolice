@@ -64,9 +64,9 @@ public final class ECPolice extends JavaPlugin{
 				list.remove(player);
 				this.getConfig().set("users", list);
 				//Send message to player to thank him for serving ECPD (Totally obvious)
-				sender.sendMessage(ChatColor.BLUE + "[ECPD] Thank you for serving ECPD!");
+				sender.sendMessage(ChatColor.BLUE + "[BNPD] Thank you for serving BNPD!");
 				//Sending message to whole server about player leaving the police force (Totally obvious?)
-				Bukkit.broadcastMessage(ChatColor.BLUE + "[ECPD] " + player + " left the police force!");
+				Bukkit.broadcastMessage(ChatColor.BLUE + "[BNPD] " + player + " left the police force!");
 				
 				//TagAPI remove tag colouring code here!
 				Player tagremoveplayer = (Player) sender;
@@ -96,9 +96,9 @@ public final class ECPolice extends JavaPlugin{
 			TagAPI.refreshPlayer(tagnewplayer);
 			
 			//Sending player a message about joining the ECPD (Totally obvious?)
-			sender.sendMessage(ChatColor.BLUE + "[ECPD] Welcome " + ChatColor.WHITE + player + ChatColor.BLUE + " , you are now one of our officers!");
+			sender.sendMessage(ChatColor.BLUE + "[BNPD] Welcome " + ChatColor.WHITE + player + ChatColor.BLUE + " , you are now one of our officers!");
 			//Sending to whole server message about player joining the ECPD (Obvious?)
-			Bukkit.broadcastMessage(ChatColor.BLUE + "[ECPD] " + player + " joined the police force!");
+			Bukkit.broadcastMessage(ChatColor.BLUE + "[BNPD] " + player + " joined the police force!");
 			
 			//Sets user into cop config.yml for future notice
 		     list.add(sender.getName());
