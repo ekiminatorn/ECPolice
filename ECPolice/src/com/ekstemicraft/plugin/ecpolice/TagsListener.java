@@ -22,7 +22,7 @@ public class TagsListener implements Listener{
 		ArrayList<String> list = (ArrayList<String>) plugin.getConfig().getStringList("users");
 		if(list.contains(event.getNamedPlayer().getName())){
               //If true, sets users tag to blue.
-			event.setTag(ChatColor.BLUE + event.getNamedPlayer().getName());	
+			event.setTag(ChatColor.AQUA + event.getNamedPlayer().getName());	
 		}	
 	}
 }
